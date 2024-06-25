@@ -419,3 +419,24 @@ document.getElementById('search-button').addEventListener('click', function() {
         console.log("Erro ao buscar álbuns:", error);
     });
 });
+
+// Função para enviar mensagem de contato
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById('contact-name').value;
+    const email = document.getElementById('contact-email').value;
+    const message = document.getElementById('contact-message').value;
+    const newMessageRef = push(ref(db, 'Mensagens'));
+
+    set(newMessageRef, {
+        name: name,
+        email: email,
+        message: message,
+        timestamp: new Date().toISOString()
+    }).then(() => {
+        console.log("Mensagem enviada com sucesso");
+        document.getElementById('contact-form').reset();
+    }).catch((error) => {
+        console.error("Erro ao enviar mensagem:", error);
+    });
+});
