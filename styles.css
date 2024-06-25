@@ -1,0 +1,79 @@
+
+
+body {
+  
+  margin: 20px;
+  text-align: center; /* Centraliza todo o conteúdo */
+
+
+
+}
+
+
+
+
+#tabela-entradas {
+  margin: 0 auto; /* Isso centraliza a tabela horizontalmente */
+  width: 50%; /* Define a largura da tabela */
+}
+
+
+
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+input[type="text"], button {
+  margin-bottom: 10px;
+  padding: 5px;
+
+}
+
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 30%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #006eff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 20%;
+}
+
+button:hover {
+    background-color: #006bb3;
+}
+
+/* Responsivo */
+@media (min-width: 600px) {
+    main {
+        padding: 40px;
+    }
+}
