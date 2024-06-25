@@ -1,1 +1,245 @@
+header#topo {
+  font-size: 2em;
+  background-color: rgb(95, 104, 230);
+ /* color: white;
+  padding: 10px;
+  text-align: center;*/
+  margin-bottom: 20px;
+}
 
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 0;
+}
+
+
+
+/* Formulários */
+form {
+  margin-bottom: 20px;
+  text-align: center; /* Centraliza os elementos dentro do formulário */
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form button {
+  width: calc(30% - 20px); /* Reduzindo um pouco para melhorar o espaçamento */
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #2196F3; /* Cor azul */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0b7dda; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Álbuns */
+#album-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.album {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.album h3 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.album p {
+  margin-bottom: 10px;
+}
+
+.album button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #2196F3; /* Cor azul */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.album button:hover {
+  background-color: #0b7dda; /* Tom mais escuro ao passar o mouse */
+  color: white;
+}
+
+.album button.active {
+  background-color: #0b7dda; /* Cor de ação quando ativo */
+  color: white;
+}
+
+/* Comentários */
+#comments-list {
+  margin-top: 20px;
+}
+
+.comment {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment p {
+  margin: 0;
+}
+
+.comment button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #2196F3; /* Cor azul */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.comment button:hover {
+  background-color: #0b7dda; /* Tom mais escuro ao passar o mouse */
+  color: white;
+}
+
+.comment button.active {
+  background-color: #0b7dda; /* Cor de ação quando ativo */
+  color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  #album-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espaço entre os botões */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0b7dda; 
+  color: white;
+
+}
+
+.logout-button {
+ margin-top: 20px; 
+
+
+}
+
+#user-info {
+  color: #eff5ef; /* Cor verde */
+  font-size: 0.6em; /* Aumenta o tamanho da fonte */
+  margin: 10px 0; /* Adiciona margem acima e abaixo */
+}
+
+
+#album-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center; /* Centraliza os álbuns na lista */
+}
+
+.album {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px; /* Define a largura fixa para cada álbum */
+  text-align: center;
+}
+
+.album-foto {
+  width: 50%;
+  height: 50px; /* Define a altura fixa para a foto */
+  object-fit: cover; /* Faz com que a foto se ajuste ao contêiner sem distorcer */
+}
+
+.album-info {
+  padding: 16px;
+}
+
+.album-titulo {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.album-artista {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.album-faixas {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
