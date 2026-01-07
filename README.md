@@ -1,10 +1,7 @@
-Sim, **consigo ver o repositório `web2024` no GitHub** corretamente. Ele é público e contém código de um projeto web (HTML, CSS e JavaScript). ([GitHub][1])
 
-Abaixo está um **README.md personalizado** com base no que aparece no repositório (estrutura e arquivos que encontrei):
 
----
 
-## Modelo de **README.md** para o seu projeto
+
 
 ```md
 # 📌 Projeto Web2024
