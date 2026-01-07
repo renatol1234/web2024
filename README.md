@@ -80,19 +80,7 @@ GitHub: [https://github.com/renatol1234](https://github.com/renatol1234)
 
 ```
 
----
 
-### Recomendações adicionais
-
-**1) Adicione uma descrição no repositório:**  
-No GitHub, vá em *Settings* ou na página principal do repo e clique no ícone do lápis ao lado do nome para adicionar uma descrição curta do projeto. :contentReference[oaicite:1]{index=1}
-
-**2) Coloque um título e subtítulo no README:**  
-Isso ajuda quem visita o repositório a entender rápido do que se trata.
-
-**3) Se você usar o projeto como portfólio,** pode adicionar imagens/screenshots do site funcionando.
-
----
 
 Se quiser, posso **gerar uma versão visual do README com screenshot de demonstração** (você pode fornecer imagens ou me dizer onde quer destaque).
 ::contentReference[oaicite:2]{index=2}
