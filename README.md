@@ -81,9 +81,6 @@ GitHub: [https://github.com/renatol1234](https://github.com/renatol1234)
 ```
 
 
-
-Se quiser, posso **gerar uma versão visual do README com screenshot de demonstração** (você pode fornecer imagens ou me dizer onde quer destaque).
-::contentReference[oaicite:2]{index=2}
 ```
 
 [1]: https://github.com/renatol1234/web2024 "GitHub - renatol1234/web2024"
